@@ -1,0 +1,88 @@
+a{	
+	text-decoration: none;
+	color: DarkRed;
+	font-size: 20px;
+}
+
+a:hover{
+	color: blue;
+	border: 2px solid black;
+	border-radius : 5px;
+}
+
+article{
+	border-style: solid;
+	border-color: black;
+}
+	
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	padding: 14px 20px;
+}
+
+figcaption{
+	font-style: italic;
+	font-size: 15px;
+	color: DarkRed;
+}
+
+nav{
+	background: grey;
+}
+
+*{
+	font-family: arial;
+	text-align: center;
+}
+#id_headervanh1{
+	padding: 10px;
+	font-size: 25px;
+	background: DarkRed;
+	color: white;
+}
+
+#id_footervanaddress{
+	padding: 10;
+	background: DarkRed;
+	color: white;
+}
+
+aside{
+	background: grey;
+}
+.class_grid{
+	padding: 0px;
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-areas:
+	'header header header'
+	'nav main aside'
+	'footer footer footer'
+}
+
+@media (max-width: 1000px) {
+.class_grid {
+	padding: 0px;
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	'header'
+	'nav'
+	'main'
+	'aside'
+	'footer';
+}
+}
+
+.class_area_header{ grid-area: header; }
+.class_area_nav{ grid-area: nav; }
+.class_area_main{ grid-area: main; }
+.class_area_aside{ grid-area: aside; }
+.class_area_footer{ grid-area: footer; }
